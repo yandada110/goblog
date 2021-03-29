@@ -1,0 +1,14 @@
+
+{{define "form-fields"}}
+    <div class="form-group mt-3">
+        <label for="title">标题</label>
+        <input type="text" class="form-control" name="title" value="{{ .Article.Title }}" required>
+
+    </div>
+
+    <div class="form-group mt-3">
+        <label for="body">内容</label>
+        <textarea name="body" cols="30" rows="10" class="form-control">{{ .Article.Body }}</textarea>
+
+    </div>
+{{ end }}
